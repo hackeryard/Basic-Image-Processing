@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="LE_img_path">
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>900</width>
+         <height>435</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="QL_imgview">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="maximumSize">
+       <size>
+        <width>1666666</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>900</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="text">
+           <string> 缩放</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>2</number>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+          <property name="pageStep">
+           <number>5</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>旋转图像(顺时针90°)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>920</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>图像(F)</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionReset"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>特效(P)</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>关于我们(H)</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/open.ico</normaloff>:/new/prefix1/icos/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/reset.ico</normaloff>:/new/prefix1/icos/reset.ico</iconset>
+   </property>
+   <property name="text">
+    <string>重置(R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/save.ico</normaloff>:/new/prefix1/icos/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/saveas.ico</normaloff>:/new/prefix1/icos/saveas.ico</iconset>
+   </property>
+   <property name="text">
+    <string>另存为(Shift+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/shuip.ico</normaloff>:/new/prefix1/icos/shuip.ico</iconset>
+   </property>
+   <property name="text">
+    <string>水平百叶窗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/shuz.ico</normaloff>:/new/prefix1/icos/shuz.ico</iconset>
+   </property>
+   <property name="text">
+    <string>竖直百叶窗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset theme="think" resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/mosaic.ico</normaloff>:/new/prefix1/icos/mosaic.ico</iconset>
+   </property>
+   <property name="text">
+    <string>马赛克</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/help.ico</normaloff>:/new/prefix1/icos/help.ico</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="hack.qrc">
+     <normaloff>:/new/prefix1/icos/home.ico</normaloff>:/new/prefix1/icos/home.ico</iconset>
+   </property>
+   <property name="text">
+    <string>转到网页</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="hack.qrc"/>
+ </resources>
+ <connections/>
+</ui>

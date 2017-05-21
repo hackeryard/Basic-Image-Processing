@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icos/mosaic.ico</file>
+        <file>icos/shuip.ico</file>
+        <file>icos/shuz.ico</file>
+        <file>icos/help.ico</file>
+        <file>icos/home.ico</file>
+        <file>icos/open.ico</file>
+        <file>icos/reset.ico</file>
+        <file>icos/save.ico</file>
+        <file>icos/saveas.ico</file>
+    </qresource>
+</RCC>
